@@ -1,9 +1,9 @@
 {
-  "name": "@plou/atfull",
-  "description": "Atfull theme",
+  "name": "@plou/laponctuelle",
+  "description": "La Poctuelle theme",
   "version": "1.0.0",
   "author": "Plou",
-  "repository": "https://github.com/Plou/Atfull",
+  "repository": "https://github.com/Plou/laponctuelle",
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
