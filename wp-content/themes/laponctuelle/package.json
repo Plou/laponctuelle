@@ -9,8 +9,8 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "autoprefixer": "^8.6.5",
     "babelify": "^9.0.0",
     "browser-sync": "^2.26.7",
