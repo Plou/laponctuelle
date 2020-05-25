@@ -1,0 +1,7 @@
+{
+    "name": "dummy/skin",
+    "description": "wordpress dummy theme",
+    "require": {
+        "timber/timber": "^1.15"
+    }
+}

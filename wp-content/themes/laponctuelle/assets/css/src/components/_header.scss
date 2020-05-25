@@ -1,0 +1,11 @@
+.header__logo {
+  font-size: 20em;
+  font-weight: 900;
+}
+
+.header__link {
+
+  &:hover {
+    text-decoration: none;
+  }
+}

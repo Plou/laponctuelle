@@ -1,0 +1,43 @@
+{# page.php #}
+{% extends 'Layouts/base.twig' %}
+
+{% block head %}
+  {% include 'Partials/Layout/_head.twig' %}
+
+  {% for image in post.meta('slides') %}
+    <link rel="preload" as="image" href="{{Image(image) | resize(1200)}}">
+  {% endfor %}
+{% endblock %}
+
+{% block content %}
+  <section class="header">
+    <div class="background-slides">
+      {% for image in post.meta('slides') %}
+        <div class="background-slides__item {{ loop.first ? 'is-first'}}" style="background-image: url({{Image(image) | resize(1200)}})"></div>
+      {% endfor %}
+    </div>
+    <h1 class="header__logo">
+    <a class="header__link" href="{{site.url}}">
+      <img class="header__img" src="{{ Image('15').src | resize(512) }}" alt="{{ site.name }}">
+    </a>
+    </h1>
+    <p class="header__subtitle">{{ site.description }}</p>
+  </section>
+
+  <article class="main">
+    <ul class="artist-list">
+      {% for artist in artists %}
+        {% if not isCollab and artist.meta('is-past-collab') %}
+          {% set isCollab = true %} 
+          </ul>
+          <h2 class="artist-list__section-title">Past collaborations</h2>
+          <ul class="artist-list">
+        {% endif %}
+        {% include ['Partials/Components/_'~artist.post_type~'.twig', 'Partials/Components/_post.twig'] with {'post': artist} %}
+      {% endfor %}
+    </ul>
+
+    {{post.content}}
+  </article>
+{% endblock %}
+

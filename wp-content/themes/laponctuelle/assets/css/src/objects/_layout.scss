@@ -1,0 +1,23 @@
+.header {
+  min-height: 45vh;
+  padding: 15px;
+
+  @media screen and #{$media-medium} {
+    padding: 30px;
+  }
+  
+  @media screen and #{$media-large} {
+    padding: 60px;
+  }
+}
+
+.main {
+  padding: 15px;
+  
+  @media screen and #{$media-medium} {
+    padding: 30px;
+  }
+  @media screen and #{$media-large} {
+    padding: 60px;
+  }
+}

@@ -1,0 +1,19 @@
+<li class="artist">
+  {# <a class="artist__link" href="{{post.link}}"> #}
+  <span class="artist__link">
+
+    {% if post.thumbnail.src %}
+      <div class="artist__thumbnail" style="background-image: url({{post.thumbnail | resize(1200)}})"></div>
+    {% endif %}
+
+    <h2 class="artist__title {{post.post_title | length > 16 ? 'has-long-name'}}">
+      <span class="artist__name">{{post.post_title | replace({' w/ ': '<br>w/&nbsp;'}) }}</span>
+      <span class="artist__info">{{ post.meta('show_name') ? ' –&nbsp;' ~ post.meta('show_name')}}</span>
+    </h2>
+    <p class="artist__meta">
+      {{ post.meta('show_date') }}
+    </p>
+
+  </span>
+  {# </a> #}
+</li>

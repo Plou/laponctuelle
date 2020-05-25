@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html {{site.language_attributes}}>
+<head>
+  {% block head %}
+    {% include 'Partials/Layout/_head.twig' %}
+  {% endblock %}
+  
+  {{function('wp_head')}}
+</head>
+
+  <body class="{{body_class}}" data-template="base.twig" id="body">
+    {# {% include 'Partials/Components/_cookie-box.twig' %} #}
+
+    {% block header %}
+      {# {% include 'Partials/Layout/_header.twig' %} #}
+    {% endblock %}
+
+    <section id="content" role="main" class="content">
+      {% block content %}
+      {% endblock %}
+    </section>
+
+    {% block footer %}
+      {% include 'Partials/Layout/_footer.twig' %}
+    {% endblock %}
+
+    {% block scripts %}
+      {# {% include 'Partials/Components/_analytics.twig' %} #}
+      {{ function('wp_footer') }}
+    {% endblock %}
+  </body>
+  
+</html>
