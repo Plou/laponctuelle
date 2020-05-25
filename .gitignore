@@ -1,0 +1,16 @@
+.DS_Store
+.db_thumb
+._*
+
+/*
+!wp-content
+
+wp-content/plugins/*
+!wp-content/plugins/elementor-widgets
+
+!README.md
+!db_atfull.sql
+
+
+!.gitkeep
+
