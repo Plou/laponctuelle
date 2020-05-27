@@ -1,8 +1,24 @@
-.nav {
+.nav__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav__item {
+  position: relative;
   margin: 0;
+}
+.nav__drop {
+  opacity: 0;
+  position: absolute;
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+
+  .nav__item:hover & {
+    opacity: 1;
+    pointer-events: all;
+  }
 }

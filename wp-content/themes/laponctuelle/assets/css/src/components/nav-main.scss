@@ -1,0 +1,113 @@
+.nav-main__list {
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+}
+
+.nav-main__item {
+  display: flex;
+  align-items: center;
+  margin: 0 5px; 
+
+  font-family: $ff-headings;
+  font-size: 2em;
+  font-weight: $fw-semibold;
+}
+
+.nav-main__link {
+  position: relative;
+  display: block;
+  color: $light;
+  padding: 10px 10px;
+  
+  &:hover {
+    text-shadow: 0 0 2px rgba($light, .9);
+    text-decoration: none;
+  }
+
+  .current_page_parent &::after,
+  .current_page_item &::after {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    content:"";
+    bottom: 0;
+    left: 0;
+    background-size: 120px 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    padding-bottom: 9/118 * 100%;
+    background-image: url("../img/line-small--light.svg");
+    transform: translateY(30%);
+  }
+}
+
+.nav-main__drop {
+  background-color: $color-main;
+  top: 100%;
+  left: 50%;
+  min-height: 90px;
+  transition: 200ms transform ease-in-out,  200ms opacity ease-in;
+  transform: translateX(-50%) translateY(-15px);
+  padding: 10px 0;
+
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+
+  &::after,
+  &::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    content:"";
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  &::after {
+    right: 0;
+    padding-bottom: 8/167 * 100%;
+    transform: translateY(2px);
+    background-image: url("../img/nav__drop__border-b.svg");
+  }
+  
+  &::before {
+    top: 0;
+    padding-bottom: 8/167 * 100%;
+    transform: translateX(-2px);
+    background-image: url("../img/nav__drop__border-l.svg");
+  }
+
+  .nav__item:hover & {
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+}
+
+.nav-main__drop__item {
+  font-size: 1.8rem;
+
+  &:hover,
+  &:focus {
+    text-shadow: 0 0 2px rgba($light, .9);
+  }
+
+  &.current_page_item {
+    font-weight: $fw-bold;
+    text-shadow: 0 0 1px rgba($light, .8);
+    
+  }
+}
+
+.nav-main__drop__link {
+  display: block;
+  color: $light;
+  padding: 5px 20px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

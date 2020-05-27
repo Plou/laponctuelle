@@ -3,8 +3,8 @@
 {% extends 'Layouts/base.twig' %}
 
 {% block content %}
-  <article class="post post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    <header class="post__header">
+  <article class="main main-type-{{post.post_type}} container" id="main-{{post.ID}}">
+    <header class="main__heading">
       <div class="heading">
         <h1 class="heading__title">
           {{post.title}}
@@ -27,21 +27,25 @@
       </div>
 
       <aside>
+        <div class="main__gallery">
         <div class="gallery">
           TODO: gallery
+        </div>
         </div>
       </aside>
     </header>
 
-    <main class="post__content">
+    <main class="main__content">
       {{post.content}}
     </main>
 
-    <aside class="post-calendar">
-      TODO: post-calendar
+    <aside class="main__calendar">
+      <div class="calendar">
+        TODO: post-calendar
+      </div>
     </aside>
 
-    <footer class="post-footer">
+    <footer class="main__footer">
       <a href="#" class="button">TODO: Link to Dossier</a>
     </footer>
   </article>

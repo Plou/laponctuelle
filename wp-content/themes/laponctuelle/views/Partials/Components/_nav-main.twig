@@ -1,13 +1,13 @@
-<nav id="nav-main" class="nav-main" role="navigation">
-  <ul class="list-inline">
+<nav id="nav-main" class="nav nav-main" role="navigation">
+  <ul class="nav__list nav-main__list">
   {% for item in menu.main.get_items %}
-    <li class="nav-item main-level {{item.classes | join(' ')}}">
-      <a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+    <li class="nav__item nav-main__item {{item.classes | join(' ')}}">
+      <a class="nav__link nav-main__link" href="{{item.get_link}}">{{item.title}}</a>
       {% if item.get_children %}
-        <ul class="nav nav-drop">
+        <ul class="nav nav__drop nav-main__drop">
         {% for child in item.get_children %}
-          <li class="nav-drop-item {{child.classes | join(' ')}}">
-            <a class="nav-link" href="{{child.get_link}}">{{child.title}}</a>
+          <li class="nav__drop__item nav-main__drop__item {{child.classes | join(' ')}}">
+            <a class="nav__drop__link nav-main__drop__link" href="{{child.get_link}}">{{child.title}}</a>
           </li>
         {% endfor %}
         </ul>

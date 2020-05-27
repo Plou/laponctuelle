@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="164px" viewBox="0 0 4 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>nav__drop__border-r</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="header/header" transform="translate(-837.000000, -96.000000)" stroke="#eb6eaa" stroke-width="2">
+            <g id="header">
+                <g id="nav-main" transform="translate(565.000000, 44.000000)">
+                    <g id="nav__drop" transform="translate(105.000000, 53.000000)">
+                        <polygon id="nav__drop__border-r" points="168 161.483569 168.936795 121.710586 169.459023 50.4321224 168.490678 0.4835689"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+.heading  {
+  position: relative;
+  margin: 100px 0;
+  padding-left: 200px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    content:"";
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6px;
+    width: 368px;
+    background-image: url("../img/heading__underline.svg");
+  }
+}
+
+.heading__title {
+  margin: 0;
+  font-size: 6em;
+  font-weight: $fw-bold;
+}

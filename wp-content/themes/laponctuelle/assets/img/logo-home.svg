@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1103" height="482" viewBox="0 0 1103 482">
+    <defs>
+        <filter id="prefix__a" width="148.6%" height="135.6%" x="-24.3%" y="-17.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="prefix__b" width="116.3%" height="117.9%" x="-8.2%" y="-8.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__c" width="157.1%" height="162.6%" x="-28.5%" y="-31.3%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+        </filter>
+        <filter id="prefix__d" width="119.5%" height="128.8%" x="-9.8%" y="-14.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__e" width="134.9%" height="135.6%" x="-17.5%" y="-17.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="prefix__f" width="133.2%" height="118.9%" x="-16.6%" y="-9.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__g" width="216.2%" height="166%" x="-58.1%" y="-33%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+        </filter>
+        <filter id="prefix__h" width="132%" height="117.9%" x="-16%" y="-9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__i" width="129.6%" height="135.6%" x="-14.8%" y="-17.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="prefix__j" width="118.6%" height="117.8%" x="-9.3%" y="-8.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__k" width="114.2%" height="117.8%" x="-7.1%" y="-8.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__l" width="149.7%" height="162.4%" x="-24.8%" y="-31.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+        </filter>
+        <filter id="prefix__m" width="145.8%" height="135.6%" x="-22.9%" y="-17.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+        <filter id="prefix__n" width="123.4%" height="117.8%" x="-11.7%" y="-8.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+        <filter id="prefix__o" width="181.9%" height="162.4%" x="-40.9%" y="-31.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7"/>
+        </filter>
+        <filter id="prefix__p" width="130.9%" height="135.6%" x="-15.4%" y="-17.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+        </filter>
+    </defs>
+    <g fill="#FFF" fill-rule="evenodd">
+        <g>
+            <path d="M0 68.324L49.415 68.176 0 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M2 253.324L51.415 253.176 2 185.815z" filter="url(#prefix__a)" opacity=".291" transform="translate(2) translate(6 106)"/>
+            <path d="M81.419 36.657L155.018 68.324 107.651 1.201z" transform="translate(2) translate(6 106)"/>
+            <path d="M81.419 127.657L155.018 159.324 107.651 92.201z" filter="url(#prefix__b)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M83.419 326.657L157.018 358.324 109.651 291.201z" filter="url(#prefix__c)" opacity=".2" transform="translate(2) translate(6 106)"/>
+            <path d="M217.598 0.937L217.598 42.609 279.071 42.393 279.071 0.937z" transform="translate(2) translate(6 106)"/>
+            <path d="M217.598 91.937L217.598 133.609 279.071 133.393 279.071 91.937z" filter="url(#prefix__d)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M306.587 68.177L375.344 68.177 375.344 0.918 306.674 0.726z" transform="translate(2) translate(6 106)"/>
+            <path d="M308.587 253.177L377.344 253.177 377.344 185.918 308.674 185.726z" filter="url(#prefix__e)" opacity=".291" transform="translate(2) translate(6 106)"/>
+            <path d="M399.314 66.696L435.445 34.763 399.314 3.094z" transform="translate(2) translate(6 106)"/>
+            <path d="M399.314 157.696L435.445 125.763 399.314 94.094z" filter="url(#prefix__f)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M401.314 356.696L437.445 324.763 401.314 293.094z" filter="url(#prefix__g)" opacity=".2" transform="translate(2) translate(6 106)"/>
+            <path d="M435.445 34.763L472.897 68.176 472.897 1.202z" transform="translate(2) translate(6 106)"/>
+            <path d="M435.445 125.763L472.897 159.176 472.897 92.202z" filter="url(#prefix__h)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M496.818 0.815L496.818 68.176 577.962 68.176 540.453 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M498.818 185.815L498.818 253.176 579.962 253.176 542.453 185.815z" filter="url(#prefix__i)" opacity=".291" transform="translate(2) translate(6 106)"/>
+            <path d="M654.13 68.176L718.625 68.176 718.625 0.815 654.13 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M654.13 159.176L718.625 159.176 718.625 91.815 654.13 91.815z" filter="url(#prefix__j)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M742.929 0.815L742.929 68.176 827.519 68.176 793.454 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M742.929 91.815L742.929 159.176 827.519 159.176 793.454 91.815z" filter="url(#prefix__k)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M744.929 290.815L744.929 358.176 829.519 358.176 795.454 290.815z" filter="url(#prefix__l)" opacity=".2" transform="translate(2) translate(6 106)"/>
+            <path d="M852.783 68.177L905.22 68.177 852.783 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M854.783 253.177L907.22 253.177 854.783 185.815z" filter="url(#prefix__m)" opacity=".291" transform="translate(2) translate(6 106)"/>
+            <path d="M930.485 68.177L981.773 68.177 930.485 0.815z" transform="translate(2) translate(6 106)"/>
+            <path d="M930.485 159.177L981.773 159.177 930.485 91.815z" filter="url(#prefix__n)" opacity=".451" transform="translate(2) translate(6 106)"/>
+            <path d="M932.485 358.177L983.773 358.177 932.485 290.815z" filter="url(#prefix__o)" opacity=".2" transform="translate(2) translate(6 106)"/>
+            <path d="M1007.037 0L1007.037 67.361 1084.738 67.361 1050.674 0z" transform="translate(2) translate(6 106)"/>
+            <path d="M1009.037 185L1009.037 252.361 1086.738 252.361 1052.674 185z" filter="url(#prefix__p)" opacity=".291" transform="translate(2) translate(6 106)"/>
+        </g>
+        <path d="M0 1.029L0 90.83 4.586 95.318 62.487 95.318 66.466 93.061 112.243 14.762 157.512 96.912 165.583 92.649 116.397 3.388 108.381 3.288 59.826 86.339 9.174 86.339 9.174 1.029z" transform="translate(2)"/>
+        <path d="M106.055 94.665L118.094 94.665 118.094 82.879 106.055 82.879zM226.441 10.009v43.196l54.462-.24V10.01H226.44zm0 85.125h-9.17V5.518l4.584-4.49h63.634l4.586 4.49v51.917l-4.565 4.49-59.069.261v32.948zM315.303 86.154h59.39l.083-76.145h-59.392l-.08 76.145zm63.972 8.98h-68.562l-4.587-4.496.09-85.124 4.586-4.486h68.564l4.586 4.496-.092 85.124-4.585 4.486zM473.23 95.742L407.885 18.036 407.885 95.133 398.711 95.133 398.711 5.519 406.838 2.665 472.185 80.371 472.185 1.029 481.358 1.029 481.358 92.888zM586.266 95.133L500.656 95.133 496.069 90.643 496.069 5.518 500.656 1.029 548.81 1.029 548.81 10.008 505.241 10.008 505.241 86.153 586.266 86.153zM563.506 10.008L638.03 10.008 638.03 1.028 563.506 1.028z" transform="translate(2)"/>
+        <path d="M596.182 95.134L605.354 95.134 605.354 1.029 596.182 1.029zM722.131 95.133L657.732 95.133 653.145 90.643 653.145 1.029 662.317 1.029 662.317 86.153 717.543 86.153 717.543 1.029 726.717 1.029 726.717 90.643zM835.446 95.133L746.398 95.133 741.812 90.643 741.812 5.518 746.398 1.029 801.432 1.029 801.432 10.008 750.984 10.008 750.984 86.153 835.446 86.153z" transform="translate(2)"/>
+        <path d="M761.493 52.946L773.532 52.946 773.532 41.159 761.493 41.159zM1010.108 0L1005.522 4.49 1005.522 89.614 1010.108 94.104 1099.157 94.104 1099.157 85.124 1014.696 85.124 1014.696 8.98 1065.144 8.98 1065.144 0z" transform="translate(2)"/>
+        <path d="M1025.206 52.946L1037.245 52.946 1037.245 41.159 1025.206 41.159zM913.032 95.133L856.087 95.133 851.499 90.643 851.499 1.029 860.671 1.029 860.671 86.153 913.032 86.153zM989.47 95.133L933.671 95.133 929.086 90.643 929.086 1.029 938.259 1.029 938.259 86.153 989.47 86.153z" transform="translate(2)"/>
+    </g>
+</svg>
