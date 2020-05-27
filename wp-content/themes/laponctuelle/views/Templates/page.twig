@@ -3,7 +3,46 @@
 {% extends 'Layouts/base.twig' %}
 
 {% block content %}
-  <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-    {{post.content}}
+  <article class="post post-type-{{post.post_type}}" id="post-{{post.ID}}">
+    <header class="post__header">
+      <div class="heading">
+        <h1 class="heading__title">
+          {{post.title}}
+        </h1>
+      </div>
+      
+      <div class="chapo">
+        <div class="chapo__illu">
+          TODO: chapo__illu
+          <img href="{{Image(0) | resize(1200)}}" alt="{{__('Visuel du spectacle') ~ ' ' ~ post.title}}">
+        </div>
+        <div class="chapo__content">
+          <div class="chapo__intro">
+            TODO: chapo__intro
+          </div>
+          <div class="chapo__text">
+            TODO: chapo__text
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="gallery">
+          TODO: gallery
+        </div>
+      </aside>
+    </header>
+
+    <main class="post__content">
+      {{post.content}}
+    </main>
+
+    <aside class="post-calendar">
+      TODO: post-calendar
+    </aside>
+
+    <footer class="post-footer">
+      <a href="#" class="button">TODO: Link to Dossier</a>
+    </footer>
   </article>
 {% endblock %}

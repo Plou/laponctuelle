@@ -23,6 +23,7 @@
 
 
 $context = Timber::get_context();
+$context['post'] = Timber::get_post();
 
 $templates = array(
     'Templates/page-' . $post->post_name . '.twig',
@@ -31,18 +32,6 @@ $templates = array(
     'Templates/index.twig');
 
 if ( is_home() || is_front_page()) {
-    $context['post'] = Timber::get_post();
-    $context['artists'] = Timber::get_posts(array(
-        'post_type' => 'artist',
-        'posts_per_page'	=> -1,
-        'meta_key' => 'is-past-collab',
-        'orderby' => [
-            'meta_value' => 'ASC',
-            'menu_order' => 'ASC',
-            'date' => 'DESC'
-        ],
-    ));
-
     array_unshift( $templates, 'Templates/front-page.twig', 'Templates/home.twig' );
 }
 
