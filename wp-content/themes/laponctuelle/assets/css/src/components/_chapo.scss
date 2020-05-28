@@ -1,0 +1,29 @@
+.chapo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.chapo__illustration {
+  flex-basis: 300px;
+  flex-grow: 2;
+  margin-right: 90px;
+}
+
+.chapo__content {
+  flex-basis: 300px;
+  flex-grow: 5;
+}
+
+.chapo__intro {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+  font-weight: $fw-bold;
+}
+
+.chapo__text {
+  margin-bottom: 40px;
+  font-size: 2em;
+}

@@ -1,2 +1,2 @@
 <?php
-    require(__DIR__.'/../shortcodes/honeypot/honeypot.php');
+    require(__DIR__.'/../shortcodes/chapo/chapo.php');

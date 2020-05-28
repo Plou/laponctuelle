@@ -1,7 +1,7 @@
 <?php
 namespace Skin;
 
-use Skin\Widgets\HoneyPot;
+use Skin\Widgets\Chapo;
 use Skin\Widgets\Inline_Editing;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -57,7 +57,7 @@ class Plugin {
 	 * @access private
 	 */
 	private function includes() {
-		require __DIR__ . '/widgets/honey-pot.php';
+		require __DIR__ . '/widgets/chapo.php';
 	}
 
 	/**
@@ -68,7 +68,7 @@ class Plugin {
 	 * @access private
 	 */
 	private function register_widget() {
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new HoneyPot() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Chapo() );
 	}
 }
 
