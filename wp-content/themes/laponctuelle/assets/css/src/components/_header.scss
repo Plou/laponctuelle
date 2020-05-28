@@ -26,10 +26,11 @@
 }
 
 .header__logo {
+  display: flex;
+  justify-content: flex-start;
   flex-grow: 10;
   margin: 0;
   padding: 30px 30px 25px;
-
 }
 
 .header__link {
