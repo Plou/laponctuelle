@@ -1,7 +1,6 @@
 .chapo {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
   align-items: center;
 }
 
@@ -9,6 +8,10 @@
   flex-basis: 300px;
   flex-grow: 2;
   margin-right: 90px;
+}
+
+.chapo__image {
+  display: block;  
 }
 
 .chapo__content {

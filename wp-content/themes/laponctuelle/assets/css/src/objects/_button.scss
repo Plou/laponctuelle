@@ -1,0 +1,49 @@
+a.elementor-button-link,
+.button {
+  display: inline-block;
+  position: relative;
+  margin: 10px 0;
+  color: $light;
+  background-color: $color-main;
+  border-radius: 2px;
+  border: 2px solid $color-main;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: $ff-headings;
+  font-weight: $fw-bold;
+
+  transition: 200ms color, 200ms background-color;
+  
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: rotate(2deg) scale(1.05);
+    z-index: -1;
+    border-radius: 2px;
+    border: 2px solid $color-main;
+    background-color: $color-main;
+    will-change: transform;
+    transition: 100ms color, 100ms background-color, 200ms transform;
+  }
+
+
+  &:focus,
+  &:hover {
+    background-color: $light;
+    color: $color-main;
+    
+    &::before {
+      background-color: $light;
+      transform: rotate(-2deg) scale(1.05);
+    }
+  }
+}
+
+.elementor-button-content-wrapper {
+
+}

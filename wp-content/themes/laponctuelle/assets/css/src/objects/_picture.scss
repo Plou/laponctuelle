@@ -1,0 +1,37 @@
+.picture__frame {
+  position: relative;
+  padding: 25px 15px;
+
+
+  &::after {
+    position: absolute;
+    content: url("../img/frame-1.svg");
+    top: 0;
+    left: 0;
+  }
+
+}
+
+
+
+.picture:nth-child(2) .picture__frame::after {
+  content: url("../img/frame-2.svg");
+}
+
+.picture:nth-child(3) .picture__frame::after {
+  content: url("../img/frame-3.svg");
+}
+
+.picture:nth-child(4) .picture__frame::after {
+  content: url("../img/frame-3.svg");
+}
+
+.picture__image {
+  display: block;
+}
+
+.picture__caption {
+  margin: 0;
+  font-size: 1.4em;
+  text-align: right;
+}

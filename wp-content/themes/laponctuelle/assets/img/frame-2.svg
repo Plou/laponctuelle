@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="290px" viewBox="0 0 400 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>picture/frames/frame--2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="picture/frames/frame--2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M400,0.00694444444 L400,290.006944 L-3.63797881e-12,290.006944 L-3.63797881e-12,0.00694444444 L400,0.00694444444 Z M25.2799747,25.0926556 L24.7754069,84.0695829 L21.261857,199.967161 L18.0409143,262.865095 L105.981296,262.483489 L268.717365,262.865095 L369.426,265.006944 L379.25,265.006944 L378.734177,212.403451 L379.199102,99.1885969 L381.146975,27.0766556 L298.319451,27.8376556 L136.03169,27.4560493 L25.2799747,25.0926556 Z" id="frame__mask" fill="#FFFFFF" transform="translate(200.000000, 145.006944) scale(-1, 1) rotate(-180.000000) translate(-200.000000, -145.006944) "></path>
+        <polygon id="Line" stroke="#DA75A8" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.151899, 144.940547) scale(-1, 1) rotate(-181.000000) translate(-12.151899, -144.940547) " points="17.2012226 3.96857983 16.6140061 73.5910012 12.8564354 198.403623 7.10257487 285.912515"></polygon>
+        <polygon id="Line" stroke="#DA75A8" stroke-linecap="round" stroke-linejoin="round" transform="translate(202.025316, 276.280400) scale(-1, 1) rotate(-90.000000) translate(-202.025316, -276.280400) " points="202.435882 86.4069822 203.032261 180.199774 202.758669 348.315548 201.018372 466.153818"></polygon>
+        <polygon id="Line" stroke="#DA75A8" stroke-linecap="round" stroke-linejoin="round" transform="translate(201.012658, 9.440122) scale(-1, 1) rotate(-270.000000) translate(-201.012658, -9.440122) " points="201.423224 -188.534561 202.019603 -90.7399438 201.746011 84.5487701 200.005714 207.414806"></polygon>
+        <polygon id="Line" stroke="#DA75A8" stroke-linecap="round" stroke-linejoin="round" transform="translate(393.924051, 142.356789) scale(-1, 1) rotate(-180.000000) translate(-393.924051, -142.356789) " points="393.553331 283.329011 392.911392 213.72864 393.155988 88.9240861 394.936709 1.38456658"></polygon>
+    </g>
+</svg>
