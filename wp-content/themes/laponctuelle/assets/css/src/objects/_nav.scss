@@ -17,6 +17,8 @@
   margin: 0;
   pointer-events: none;
 
+  .nav__item:focus &,
+  .nav__item:focus-within &,
   .nav__item:hover & {
     opacity: 1;
     pointer-events: all;
