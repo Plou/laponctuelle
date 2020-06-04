@@ -3,6 +3,7 @@ namespace Skin;
 
 use Skin\Widgets\Chapo;
 use Skin\Widgets\GalleryShow;
+use Skin\Widgets\Show;
 use Skin\Widgets\Inline_Editing;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -60,6 +61,7 @@ class Plugin {
 	private function includes() {
 		require __DIR__ . '/widgets/chapo.php';
 		require __DIR__ . '/widgets/gallery-show.php';
+		require __DIR__ . '/widgets/show.php';
 	}
 
 	/**
@@ -72,6 +74,7 @@ class Plugin {
 	private function register_widget() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Chapo() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new GalleryShow() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Show() );
 	}
 }
 

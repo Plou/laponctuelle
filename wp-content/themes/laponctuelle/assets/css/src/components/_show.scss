@@ -1,0 +1,34 @@
+.show__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show__link {
+  display: block;
+}
+
+.show__frame {
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  overflow: hidden;
+  filter: grayscale(.2);
+  transition: 300ms filter;
+  
+  .show__link:hover & {
+    filter: grayscale(0);
+  }
+}
+
+.show__image {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.show__caption {
+  font-size: 2.8em;
+  font-family: $ff-headings;
+  text-align: center;
+}
