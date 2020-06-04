@@ -1,7 +1,12 @@
 .nav-main__list {
-  display: flex;
-  height: 100%;
-  align-items: stretch;
+  
+  @media screen and #{$media-medium} {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    
+  }
+
 }
 
 .nav-main__item {
@@ -10,16 +15,26 @@
   margin: 0 5px; 
 
   font-family: $ff-headings;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: $fw-semibold;
+
+
+  @media screen and #{$media-huge} {
+    font-size: 2rem;
+  }
 }
 
 .nav-main__link {
   position: relative;
   display: block;
   color: $light;
-  padding: 10px 10px;
-  
+  padding: 10px 5px;
+  transition: text-shadow 200ms;
+
+  @media screen and #{$media-huge} {
+    padding: 10px 10px;
+  }
+
   &:focus,
   &:hover {
     text-shadow: 0 0 2px rgba($light, .9);
@@ -49,12 +64,14 @@
   top: 100%;
   left: 50%;
   min-height: 90px;
+  min-width: 110%;
   transition: 100ms transform ease-in-out,  100ms opacity ease-in;
   transform: translateX(-50%) translateY(-15px);
   padding: 10px 0;
 
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
+  z-index: 1;
 
   &::after,
   &::before {
@@ -91,7 +108,11 @@
 }
 
 .nav-main__drop__item {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+
+  @media screen and #{$media-huge} {
+    font-size: 1.8rem;
+  }
 
   &.current_page_item {
     font-weight: $fw-bold;
@@ -103,6 +124,7 @@
   display: block;
   color: $light;
   padding: 5px 20px;
+  transition: text-shadow 200ms;
 
   &:focus,
   &:hover {

@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="315" height="50" viewBox="0 0 315 50" role="image" aria-labelledby="header-logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="315" height="50" viewBox="0 0 315 50" role="image" aria-labelledby="header-logo" preserveAspectRatio='none'
+>
     <title id="header-logo">La Ponctuelle</title>
     <g fill="#FFF" fill-rule="evenodd">
         <path d="M2 50L16 49.958 2 31zM25 41.036L46 50 32.485 31zM64 31L64 43 82 42.938 82 31zM90 50L109 50 109 31.054 90.024 31zM116 50L127 40.461 116 31zM127 40.521L137 50 137 31zM144 31L144 50 167 50 156.368 31zM189 50L208 50 208 31 189 31zM215 31L215 50 239 50 229.335 31zM246 50L261 50 246 31zM269 50L283 50 269 31zM291 30L291 50 313 50 303.355 30zM0 0L0 26.224 1.302 27.534 17.737 27.534 18.866 26.875 31.86 4.01 44.709 28 47 26.755 33.039.689 30.764.66 16.981 24.912 2.604 24.912 2.604 0z"/>

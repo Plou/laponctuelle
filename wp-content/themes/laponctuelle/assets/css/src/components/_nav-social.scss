@@ -19,18 +19,24 @@
   display: block;
   line-height: 1;
   color: $light;
-  transition: 300ms color;
-
+  
   &:focus,
   &:active,
   &:hover {
-    text-shadow: 0 0 2px rgba($color-link, .9);
+    .nav-social__label {
+      text-shadow: 0 0 3px rgba($light, .9);
+    }
+    
+    svg {
+      filter: drop-shadow( 0 0 2px rgba($light, .9));
+    }
   }
 }
 
 svg,
 .nav-social__label {
   vertical-align: middle;
+  transition: 300ms text-shadow, 300ms filter;
 }
 
 .nav-social__label {

@@ -9,7 +9,7 @@ button,
 a {
   text-decoration: none;
   color: $color-link;
-  transition: all 200ms;
+  transition: color 200ms;
   
   &:focus,
   &:hover {

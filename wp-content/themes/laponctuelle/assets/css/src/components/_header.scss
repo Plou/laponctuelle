@@ -45,15 +45,37 @@
   svg #m-la,
   svg #m-ponctuelle {
     transition: opacity 300ms ease-in-out;
-    opacity: .2;
+    opacity: .3;
   }
 
   &:focus,
   &:hover {
+    svg {
+      filter: drop-shadow( 0 0 2px rgba($light, .9));
+    }
     svg #m-la,
     svg #m-ponctuelle {
       opacity: .9;
     }
   }
+}
 
+
+.header__link {
+  svg {
+    width: 55px;
+    
+    @media screen and #{$media-large} {
+      width: auto;
+    }
+    
+    #m-ponctuelle,
+    #ponctuelle {
+      display: none;
+      @media screen and #{$media-large} {
+        display: block;
+      }
+    }
+
+  }
 }
