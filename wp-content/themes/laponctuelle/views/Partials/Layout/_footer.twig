@@ -1,23 +1,40 @@
 {# TODO Add links #}
-  <section class="footer">
-    <ul class="nav nav-social">
-      <li class="nav__item nav-social__item">
-        <a href="https://instagram.com/" class="nav__link nav-social__link instagram">
-          {{source('icon-instagram.svg')}}
-          <span class="nav-social__label">INSTAGRAM</span>
-        </a>
-      </li>
-      <li class="nav__item nav-social__item">
-        <a href="https://www.facebook.com/" class=" nav__link nav-social__link facebook">
-          {{source('icon-facebook.svg')}}
-          <span class="nav-social__label">FACEBOOK</span>
-        </a>
-      </li>
-      <li class="nav__item nav-social__item">
-        <a href="mailto:" class="nav__link nav-social__link contact">
-          {{source('icon-mail.svg')}}
-          <span class="nav-social__label">CONTACT</span>
-        </a>
-      </li>
-    </ul>
-  </section>
+<section class="footer">
+  <div class="footer__wrapper container">
+    <div class="footer__content">
+      <p class="footer__title">La ponctuelle</p>
+      {# <p class="footer__subtitle">Lucien Fradin et Aurore Magnier</p> #}
+      <p class="footer__text">La Ponctuelle est la compagnie créée par Aurore Magnier et Lucien Fradin afin d'accueillir leurs créations respectives, leurs travaux en commun et leurs présences artistiques sur les territoires.</p>
+      <a href="mailto:laponctuelle@gmail.com" class="button button--light">Contactez-nous</a>
+      <p class="footer__contact">
+        laponctuelle@gmail.com<br>
+        19 rue de Condé 59000 Lille<br>
+        SIRET: 84768817300016<br>
+        Licence: 2-1124417
+      </p>
+    </div>
+
+    <nav class="footer__nav nav nav-social">
+      <ul class="nav__list nav-social__list">
+        <li class="nav__item nav-social__item">
+          <a href="#mail" class="nav__link nav-social__link mail">
+            {{source('icon-mail--light.svg')}}
+            <span class="nav-social__label">Newsletter</span>
+          </a>
+        </li>
+        <li class="nav__item nav-social__item">
+          <a href="#" class=" nav__link nav-social__link tumblr">
+            {{source('icon-tumblr--light.svg')}}
+            <span class="nav-social__label">Tumblr</span>
+          </a>
+        </li>
+        <li class="nav__item nav-social__item">
+          <a href="mailto:" class="nav__link nav-social__link facebook">
+            {{source('icon-facebook--light.svg')}}
+            <span class="nav-social__label">Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>

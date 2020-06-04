@@ -20,12 +20,16 @@ $red: #d9534f;
 $green: #5cb85c;
 
 /// Branding colors
-$pink: #eb6eaa;
-$pink-light: #f082b4;
+// $pink: #eb6eaa; //flashy sur plein d'écran
+// $pink-light: #f082b4; //flashy
+$pink: #DA75A8; //un peu fade sur mon écran
+$pink-light: #e08ab5; //fade
 
 
 $color-main: $pink;
 $color-main-light: $pink-light;
+
+$gradient-main: linear-gradient(to bottom, $color-main-light, $color-main);
 
 /// Functionnal colors
 $color-text: $dark;

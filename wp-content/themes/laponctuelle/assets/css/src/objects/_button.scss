@@ -12,6 +12,7 @@ a.elementor-button-link,
   line-height: 1;
   font-family: $ff-headings;
   font-weight: $fw-bold;
+  z-index: 1;
 
   transition: 200ms color, 200ms background-color;
   
@@ -36,10 +37,34 @@ a.elementor-button-link,
   &:hover {
     background-color: $light;
     color: $color-main;
+    text-shadow: none;
     
     &::before {
       background-color: $light;
-      transform: rotate(-2deg) scale(1.05);
+      transform: rotate(-1deg) scale(1.05);
+    }
+  }
+}
+
+.button--light {
+  color: $color-main;
+  background-color: $light;
+  border-color: $light;
+  
+  &::before {
+    background-color: $light;
+    border-color: $light;
+  }
+
+
+  &:focus,
+  &:hover {
+    background-color: $color-main;
+    color: $light;
+    
+    &::before {
+      background-color: $color-main;
+      transform: rotate(-1deg) scale(1.05);
     }
   }
 }

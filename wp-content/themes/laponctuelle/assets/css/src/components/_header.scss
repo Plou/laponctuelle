@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 
   background-color: $color-main;
-  background-image: linear-gradient(to bottom, $color-main-light, $color-main);
+  background-image: $gradient-main;
 
   &::after {
     position: absolute;
@@ -15,6 +15,7 @@
     right: 0;
     transform: translateY(8px);
     z-index: -1;
+    overflow: hidden;
   }
 }
 

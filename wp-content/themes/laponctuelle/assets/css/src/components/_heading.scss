@@ -1,7 +1,10 @@
 .heading  {
   position: relative;
   margin: 100px 0;
-  padding-left: 200px;
+
+  @media screen and #{$media-small} {
+    padding-left: clamp(30px, 15vw, 200px);
+  }
 
   &::after {
     display: block;
@@ -15,12 +18,22 @@
     background-position: center;
     height: 6px;
     width: 368px;
+    max-width: 100%;
     background-image: url("../img/heading__underline.svg");
   }
 }
 
 .heading__title {
   margin: 0;
-  font-size: 6em;
+  font-size: 3em;
   font-weight: $fw-bold;
+  text-align: center;
+  
+  @media screen and #{$media-small} {
+    text-align: left;
+    font-size: 4em;
+  }
+  @media screen and #{$media-medium} {
+    font-size: 6em;
+  }
 }
