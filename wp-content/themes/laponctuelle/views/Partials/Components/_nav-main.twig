@@ -1,4 +1,4 @@
-<nav id="nav-main" class="nav nav-main" role="navigation">
+<nav id="nav-main" class="nav nav-main {{classes ? classes}}" role="navigation">
   <ul class="nav__list nav-main__list">
   {% for item in menu.main.get_items %}
     <li class="nav__item nav-main__item {{item.classes | join(' ')}}">

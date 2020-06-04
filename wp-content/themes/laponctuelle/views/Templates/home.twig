@@ -2,20 +2,20 @@
 {% extends 'Layouts/base.twig' %}
 
 {% block header %}
-  {% include 'Partials/Layout/_header.twig' with { hideLogo: true } %}
+  {% include 'Partials/Layout/_header.twig' with { hideLogo: true, classes: "header--home" } %}
 {% endblock %}
 
 {% block content %}
-  <section class="header">
-  </section>
-
-  <article class="home-content">
+  <article class="home__content">
     <h1 class="home__logo">
-    {{site.title}}
-      {# {{source('logo.svg')}} #}
+      {{source('home__logo.svg')}}
     </h1>
 
     {{post.content}}
   </article>
 {% endblock %}
 
+
+{% block footer %}
+  {% include 'Partials/Components/_nav-social.twig' with { classes: "nav-social--home" } %}
+{% endblock %}

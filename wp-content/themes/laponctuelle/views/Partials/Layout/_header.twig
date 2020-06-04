@@ -1,4 +1,4 @@
-<header id="header" class="header" >
+<header id="header" class="header {{classes ? classes}}" >
   {% if not hideLogo %}
     <h1 class="header__logo" role="banner">
       <a class="header__link" href="/" rel="home">
@@ -6,5 +6,7 @@
       </a>
     </h1>
   {% endif %}
-  {% include 'Partials/Components/_nav-main.twig' %}
+  {% include 'Partials/Components/_nav-main.twig' with {
+    classes: classes == "header--home" ? "nav-main--home"
+  } %}
 </header>

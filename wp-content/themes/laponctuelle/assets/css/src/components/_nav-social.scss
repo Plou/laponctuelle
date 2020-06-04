@@ -1,5 +1,6 @@
 .nav-social {
   margin: 0;
+  font-family: $ff-headings;
 }
 
 .nav-social__list {
@@ -41,4 +42,45 @@ svg,
 
 .nav-social__label {
   margin-left: 5px;
+}
+
+.nav-social--home {
+  margin: auto;
+  padding: 30px 10px;
+  max-width: 100%;
+  width: 720px;
+
+  .nav-social__list {
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .nav-social__item {
+    margin-bottom: 20px;
+    font-size: 2.4em;
+    font-weight: $fw-semibold;
+  }
+
+  .nav-social__link {
+    text-align: center;
+
+    &.facebook svg {
+      width: 20px;
+      height: auto;
+    }
+    &.tumblr svg {
+      width: 20px;
+      height: auto;
+    }
+    &.mail svg {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  .nav-social__label {
+    display: block;
+    margin-top: 20px;
+  }
+
 }
