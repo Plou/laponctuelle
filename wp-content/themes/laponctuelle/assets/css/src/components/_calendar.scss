@@ -1,0 +1,58 @@
+.calendar__item {
+  display: flex;
+  padding: 10px 15px ;
+  font-family: $ff-headings;
+
+  &:nth-child(odd) {
+    background-color: $color-main;
+    color: $white;
+  }
+
+  > p {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.calendar__when {
+  margin: 0;
+}
+.calendar__date {
+  display: block;
+  margin: 0;
+  font-weight: $fw-bold;
+}
+.calendar__time {
+  display: block;
+  margin: 0;
+}
+.calendar__event {
+  display: block;
+  margin: 0;
+  flex-grow: 1;
+}
+.calendar__name {
+  display: block;
+  margin: 0;
+  font-weight: $fw-bold;
+}
+.calendar__what {
+  display: block;
+  margin: 0;
+}
+.calendar__where {
+  display: block;
+  margin: 0;
+}
+.calendar__location {
+  display: block;
+  margin: 0;
+  font-weight: $fw-bold;
+}
+.calendar__city {
+  display: block;
+  margin: 0;
+}

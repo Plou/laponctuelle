@@ -3,6 +3,7 @@ namespace Skin;
 
 use Skin\Widgets\Chapo;
 use Skin\Widgets\GalleryShow;
+use Skin\Widgets\Calendar;
 use Skin\Widgets\Show;
 use Skin\Widgets\Inline_Editing;
 
@@ -62,6 +63,7 @@ class Plugin {
 		require __DIR__ . '/widgets/chapo.php';
 		require __DIR__ . '/widgets/gallery-show.php';
 		require __DIR__ . '/widgets/show.php';
+		require __DIR__ . '/widgets/calendar.php';
 	}
 
 	/**
@@ -75,6 +77,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Chapo() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new GalleryShow() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Show() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Calendar() );
 	}
 }
 

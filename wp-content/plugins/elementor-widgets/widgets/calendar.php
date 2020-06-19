@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class Show extends Widget_Base {
+class Calendar extends Widget_Base {
 
 	/**
 	 * Retrieve the widget name.
@@ -25,7 +25,7 @@ class Show extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'show';
+		return 'calendar';
 	}
 
 	/**
@@ -38,7 +38,7 @@ class Show extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Liste des spectacles', 'show' );
+		return __( 'Calendrier', 'calendar' );
 	}
 
 	/**
@@ -84,7 +84,7 @@ class Show extends Widget_Base {
 	 * @return array Widget scripts dependencies.
 	 */
 	public function get_script_depends() {
-		return [ 'show' ];
+		return [ 'calendar' ];
 	}
 
 	/**
@@ -114,57 +114,90 @@ class Show extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Photo', 'show' ),
+				'label' => __( 'Date', 'calendar' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'calendar__nameToggle', [
+				'label' => __( 'Afficher le nom', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'default' => 'yes',
+				'return_value' => 'yes',
 			]
 		);
 
 		$repeater = new \Elementor\Repeater();
 
 		$repeater->add_control(
-			'show__caption', [
-				'label' => __( 'Légende', 'show' ),
+			'calendar__date', [
+				'label' => __( 'Date', 'calendar' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'Légende' , 'show' ),
+				'default' => __( 'Date' , 'calendar' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
-			'show__image',
-			[
-				'label' => __( 'Image', 'show' ),
-				'type' => \Elementor\Controls_Manager::MEDIA,
-				'default' => [
-					'url' => \Elementor\Utils::get_placeholder_image_src(),
-				]
+			'calendar__time', [
+				'label' => __( 'Horaire', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Horaire' , 'calendar' ),
+				'label_block' => true,
+			]
+		);
+
+
+		$repeater->add_control(
+			'calendar__name', [
+				'label' => __( 'Nom de l\'événement', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Nom de l\'événement' , 'calendar' ),
+				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
-			'show__link',
-			[
-				'label' => __( 'Liens', 'show' ),
-				'type' => \Elementor\Controls_Manager::URL,
-				'show_external' => false,
+			'calendar__what', [
+				'label' => __( 'description de l\'événement', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Description' , 'calendar' ),
+				'label_block' => true,
+			]
+		);
+
+		$repeater->add_control(
+			'calendar__location', [
+				'label' => __( 'Lieu', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Lieu' , 'calendar' ),
+				'label_block' => true,
+			]
+		);
+
+		$repeater->add_control(
+			'calendar__city', [
+				'label' => __( 'Ville', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Ville' , 'calendar' ),
+				'label_block' => true,
 			]
 		);
 
 		$this->add_control(
 			'list',
 			[
-				'label' => __( 'Liste', 'show' ),
+				'label' => __( 'Dates', 'calendar' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'show__caption' => __( 'Légende', 'show' ),
-					],
-					[
-						'show__caption' => __( 'Légende', 'show' ),
+						'calendar__date' => __( 'Date', 'calendar' ),
+						'calendar__location' => __( 'Lieu', 'calendar' ),
 					],
 				],
-				'title_field' => '{{{ show__caption }}}',
+				'title_field' => '{{{ calendar__date }}} | {{{ calendar__location }}}',
 			]
 		);
 
@@ -183,15 +216,19 @@ class Show extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$shortcode = '';
 		if ( $settings['list'] ) {
-			$shortcode = '[show-wrapper]';
+			$shortcode = '[calendar-wrapper]';
 			foreach (  $settings['list'] as $key => $item ) {
-        $shortcode .= '[show
-          show__caption="'.$item['show__caption'].'" 
-          show__link="'.$item['show__link']['url'].'" 
-          show__image="'.$item['show__image']['id'].'"
-        ]';
+				$shortcode .= '[calendar
+					calendar__date="'.$item['calendar__date'].'" 
+					calendar__time="'.$item['calendar__time'].'" 
+					calendar__name="'.$item['calendar__name'].'" 
+					calendar__what="'.$item['calendar__what'].'" 
+					calendar__location="'.$item['calendar__location'].'" 
+					calendar__city="'.$item['calendar__city'].'"
+					calendar__nametoggle="'.$settings['calendar__nameToggle'].'"
+				]';
 			}
-			$shortcode .= '[/show-wrapper]';
+			$shortcode .= '[/calendar-wrapper]';
 		}
 
 		echo do_shortcode( $shortcode );
@@ -209,15 +246,19 @@ class Show extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$shortcode = '';
 		if ( $settings['list'] ) {
-			$shortcode = '[show-wrapper]';
+			$shortcode = '[calendar-wrapper]';
 			foreach (  $settings['list'] as $key => $item ) {
-				$shortcode .= '[show
-					show__caption="'.$item['show__caption'].'" 
-          show__link="'.$item['show__link']['url'].'" 
-					show__image="'.$item['show__image']['id'].'"
+				$shortcode .= '[calendar
+					calendar__date="'.$item['calendar__date'].'" 
+					calendar__time="'.$item['calendar__time'].'" 
+					calendar__name="'.$item['calendar__name'].'" 
+					calendar__what="'.$item['calendar__what'].'" 
+					calendar__location="'.$item['calendar__location'].'" 
+					calendar__city="'.$item['calendar__city'].'" 
+					calendar__nametoggle="'.$settings['calendar__nameToggle'].'"
 				]';
 			}
-			$shortcode .= '[/show-wrapper]';
+			$shortcode .= '[/calendar-wrapper]';
 		}
 
 		echo $shortcode;
