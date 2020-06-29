@@ -1,3 +1,11 @@
+.nav-main {
+  display: none;
+}
+
+.logged-in .nav-main {
+  display: block;
+}
+
 .nav-main__list {
   
   @media screen and #{$media-medium} {
