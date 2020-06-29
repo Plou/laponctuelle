@@ -145,6 +145,15 @@ class Chapo extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'chapo__caption', [
+				'label' => __( 'Légende', 'chapo' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'Légende' , 'chapo' ),
+				'label_block' => true,
+			]
+		);
+
 
 		$this->end_controls_section();
 	}
@@ -163,6 +172,7 @@ class Chapo extends Widget_Base {
 			chapo__illustration="'.$settings['chapo__illustration']['id'].'"
 			chapo__intro="'.$settings['chapo__intro'].'"
 			chapo__text="'.$settings['chapo__text'].'"
+			chapo__caption="'.$settings['chapo__caption'].'"
 		]';
 
 		echo do_shortcode( $shortcode );
