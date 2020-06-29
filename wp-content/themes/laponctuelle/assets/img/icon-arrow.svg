@@ -1,0 +1,13 @@
+<svg width="51" height="22" viewBox="0 0 51 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Suivre le lien
+    </title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Calendrier" transform="translate(-1246 -587)" stroke="currentColor" stroke-width="2">
+            <g id="Group-7" transform="translate(1247 588)">
+                <path d="M0 10.623L40.356 8.55 32.67 20 47.878 9.793c-3.454-1.373-5.968-2.845-7.54-4.418C38.763 3.802 36.424 2.011 33.321 0c-1.228 4.512-1.842 7.887-1.842 10.125.027.065.438 2.668 1.232 7.81" id="Path-2"/>
+                <path d="M0 10.64L16.563 7.41l23.88.758L32.947 20c4.274-3.953 9.27-7.406 15.208-10.21-3.673-1.116-6.297-2.46-7.87-4.033C38.713 4.186 36.484 2.266 33.6 0c-1.228 4.512-1.842 7.887-1.842 10.125.028.065.73 2.784 2.107 8.158" id="Path-2"/>
+            </g>
+        </g>
+    </g>
+</svg>

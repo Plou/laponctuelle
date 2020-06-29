@@ -193,6 +193,7 @@ class Chapo extends Widget_Base {
 			chapo__illustration="'.$settings['chapo__illustration']['id'].'"
 			chapo__intro="'.$settings['chapo__intro'].'"
 			chapo__text="'.$settings['chapo__text'].'"
+			chapo__caption="'.$settings['chapo__caption'].'"
 		]';
 	}
 

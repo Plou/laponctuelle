@@ -1,16 +1,19 @@
-<div class="calendar__item">
-  <p class="calendar__when">
-    <span class="calendar__date">{{calendar__date}}</span>
-    <span class="calendar__time">{{calendar__time}}</span>
-  </p>
-  {% if calendar__nametoggle %}
-    <p class="calendar__event">
-      <span class="calendar__name">{{calendar__name}}</span>
-      <span class="calendar__what">{{calendar__what}}</span>
+<{{calendar__link ? 'a' : 'div'}} class="calendar__item {{calendar__link ? 'has-link'}}" {{calendar__link ? 'href="'~'calendar__link'~'"'}}>
+    {% if calendar__nametoggle %}
+      <p class="calendar__event">
+        <span class="calendar__name">{{calendar__name}}</span>
+        <span class="calendar__what">{{calendar__what}}</span>
+      </p>
+    {% endif %}
+    <p class="calendar__when">
+      <span class="calendar__date">{{calendar__date}}</span>
+      <span class="calendar__time">{{calendar__time}}</span>
     </p>
-  {% endif %}
-  <p class="calendar__where">
-    <span class="calendar__location">{{calendar__location}}</span>
-    <span class="calendar__city">{{calendar__city}}</span>
-  </p>
-</div>
+    <p class="calendar__where">
+      <span class="calendar__location">{{calendar__location}}</span>
+      <span class="calendar__city">{{calendar__city}}</span>
+    </p>
+    <div class="calendar__link">
+      {% if calendar__link %} {{source('icon-arrow.svg')}} {% endif %}
+    </div>
+</{{calendar__link ? 'a' : 'div'}}>

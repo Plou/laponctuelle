@@ -1,7 +1,11 @@
 .calendar__item {
   display: flex;
-  padding: 10px 15px ;
+  flex-direction: column;
+
+  padding: 20px 25px ;
   font-family: $ff-headings;
+
+  color: $black;
 
   &:nth-child(odd) {
     background-color: $color-main;
@@ -9,16 +13,49 @@
   }
 
   > p {
-    margin-right: 60px;
 
-    &:last-child {
-      margin-right: 0;
+    @media screen and #{$media-large} {
+      margin-bottom: 0;
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }      
+    }
+  }
+
+  @media screen and #{$media-large} {
+    padding: 10px 15px;
+    flex-direction: row;
+  }
+
+  &.has-link {
+    transition: 300ms color,  300ms background-color;
+    
+    &:hover {
+      text-shadow: none;
+      background-color: $white;
+      color: $color-main;
+      
+      &:nth-child(odd) {
+        color: $white;
+        background-color: lighten($color-main, 7%);
+      }
     }
   }
 }
 
 .calendar__when {
   margin: 0;
+  order: 2;
+  font-size: 1.4em;
+  opacity: .9;
+
+  @media screen and #{$media-large} {
+    font-size: 2em;
+    opacity: 1;
+    order: 1;
+  }
 }
 .calendar__date {
   display: block;
@@ -29,10 +66,46 @@
   display: block;
   margin: 0;
 }
+
+
 .calendar__event {
+  position: relative;
+  font-size: 2.2em;
   display: block;
   margin: 0;
+  margin-bottom: 30px;
   flex-grow: 1;
+  order: 1;
+
+  @media screen and #{$media-large} {
+    font-size: 2em;
+    order: 2;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3px;
+    width: 184px;
+    max-width: 100%;
+    background-image: url(../img/heading__underline.svg);
+    
+    @media screen and #{$media-large} {
+      display: none;
+    }
+  }
+  
+  .calendar__item:nth-child(odd) &::after {
+    background-image: url(../img/heading__underline--light.svg);
+  }
+
 }
 .calendar__name {
   display: block;
@@ -43,9 +116,19 @@
   display: block;
   margin: 0;
 }
+
+
 .calendar__where {
   display: block;
   margin: 0;
+  order: 3;
+  font-size: 1.4em;
+  opacity: .9;
+
+  @media screen and #{$media-large} {
+    font-size: 2em;
+    opacity: 1;
+  }
 }
 .calendar__location {
   display: block;
@@ -56,3 +139,30 @@
   display: block;
   margin: 0;
 }
+
+
+
+.calendar__link {
+  order: 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $color-main;
+  transition: 300ms transform;
+
+  
+  .calendar__item:nth-child(odd) & {
+    color: $white;
+  }
+
+  .calendar__item:hover & {
+    transform: translate3D(5px, 0, 0) ;
+  }
+
+  @media screen and #{$media-large} {
+    justify-content: center;
+    flex-basis: 60px;
+  }
+}
+
+

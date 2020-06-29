@@ -185,6 +185,15 @@ class Calendar extends Widget_Base {
 			]
 		);
 
+		$repeater->add_control(
+			'calendar__link',
+			[
+				'label' => __( 'Liens', 'calendar' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'show_external' => false,
+			]
+		);
+
 		$this->add_control(
 			'list',
 			[
@@ -226,6 +235,7 @@ class Calendar extends Widget_Base {
 					calendar__location="'.$item['calendar__location'].'" 
 					calendar__city="'.$item['calendar__city'].'"
 					calendar__nametoggle="'.$settings['calendar__nameToggle'].'"
+          calendar__link="'.$item['calendar__link']['url'].'" 
 				]';
 			}
 			$shortcode .= '[/calendar-wrapper]';
@@ -256,6 +266,7 @@ class Calendar extends Widget_Base {
 					calendar__location="'.$item['calendar__location'].'" 
 					calendar__city="'.$item['calendar__city'].'" 
 					calendar__nametoggle="'.$settings['calendar__nameToggle'].'"
+          calendar__link="'.$item['calendar__link']['url'].'" 
 				]';
 			}
 			$shortcode .= '[/calendar-wrapper]';

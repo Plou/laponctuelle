@@ -8,6 +8,7 @@
             'calendar__what' => '',
             'calendar__location' => '',
             'calendar__city' => '',
+            'calendar__link' => '',
         ), $atts));
         $out = Timber::compile('calendar.twig', array(
             'calendar__nametoggle' => $calendar__nametoggle,
@@ -17,6 +18,7 @@
             'calendar__what' => $calendar__what,
             'calendar__location' => $calendar__location,
             'calendar__city' => $calendar__city,
+            'calendar__link' => $calendar__link,
         ));
         return $out;
     }
