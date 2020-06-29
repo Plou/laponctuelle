@@ -1,10 +1,16 @@
 .gallery-show {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   margin-bottom: 80px;
 }
+
 .gallery-show__item {
-  flex-basis: 400px;
+  flex-basis: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-width: 240px;
+  max-width: 400px;
+  margin: 0 10px;
 }

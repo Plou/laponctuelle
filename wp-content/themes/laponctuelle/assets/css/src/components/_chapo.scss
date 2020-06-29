@@ -1,17 +1,25 @@
 .chapo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+  @media screen and #{$media-medium} {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 .chapo__illustration {
   flex-basis: 300px;
   flex-grow: 2;
-  margin-right: 90px;
+  margin-bottom: 30px;
+
+  @media screen and #{$media-medium} {
+    margin-right: 90px;
+    margin-bottom: 0;
+  }
 }
 
 .chapo__image {
-  display: block;  
+  display: block;
 }
 
 .chapo__content {
