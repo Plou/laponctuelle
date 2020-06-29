@@ -149,8 +149,6 @@ class Chapo extends Widget_Base {
 			'chapo__caption', [
 				'label' => __( 'Légende', 'chapo' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'Légende' , 'chapo' ),
-				'label_block' => true,
 			]
 		);
 

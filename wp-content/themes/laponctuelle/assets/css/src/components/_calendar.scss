@@ -39,7 +39,7 @@
       
       &:nth-child(odd) {
         color: $white;
-        background-color: lighten($color-main, 7%);
+        background-color: $color-main-light;
       }
     }
   }

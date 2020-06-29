@@ -49,7 +49,7 @@
             <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
         </filter>
     </defs>
-    <g fill="#FFF" fill-rule="evenodd">
+    <g fill="currentColor" fill-rule="evenodd">
         <g>
             <path d="M0 68.324L49.415 68.176 0 0.815z" transform="translate(2) translate(6 106)"/>
             <path d="M2 253.324L51.415 253.176 2 185.815z" filter="url(#prefix__a)" opacity=".291" transform="translate(2) translate(6 106)"/>

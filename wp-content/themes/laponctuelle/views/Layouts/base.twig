@@ -8,7 +8,7 @@
   {{function('wp_head')}}
 </head>
 
-  <body class="{{body_class}}" data-template="base.twig" id="body">
+  <body class="{{body_class}} {{post.reverse_theme ? 'is-reverse-theme'}}" data-template="base.twig" id="body">
     {# {% include 'Partials/Components/_cookie-box.twig' %} #}
 
     {% block header %}

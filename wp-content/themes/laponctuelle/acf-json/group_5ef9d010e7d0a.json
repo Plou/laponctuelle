@@ -1,12 +1,12 @@
 {
-    "key": "group_5ea7125dcf741",
-    "title": "Background Slideshow (depracated)",
+    "key": "group_5ef9d010e7d0a",
+    "title": "Thème",
     "fields": [
         {
-            "key": "field_5ea7126a64c77",
-            "label": "Slides",
-            "name": "slides",
-            "type": "gallery",
+            "key": "field_5ef9d02d7ed60",
+            "label": "Fond rose",
+            "name": "reverse_theme",
+            "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,19 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "preview_size": "full",
-            "insert": "append",
-            "library": "all",
-            "min": "",
-            "max": "",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -47,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1588600271
+    "modified": 1593430196
 }
